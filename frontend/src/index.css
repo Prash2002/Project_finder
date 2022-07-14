@@ -1,0 +1,254 @@
+/* fonts */
+
+@font-face {
+  font-family: "HKG-med";
+  src: local("HKG-med"),
+    url(./fonts/hk-grotesk/HKGrotesk-Medium.otf) format("opentype");
+  src: local("HKG-med"),
+    url(./fonts/hk-grotesk/hk-grotesk.medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HKG-semibold";
+  src: local("HKG-semibold"),
+    url(./fonts/hk-grotesk/HKGrotesk-SemiBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HKG-reg";
+  src: local("HKG-reg"),
+    url(./fonts/hk-grotesk/HKGrotesk-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "HKG-bold";
+  src: local("HKG-reg"),
+    url(./fonts/hk-grotesk/HKGrotesk-Bold.otf) format("opentype");
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Manrope", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: white;
+  background-color: #191919;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.fade-up {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.fade-left {
+  position: relative;
+  transform: translatex(-100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.fade-left-delay {
+  position: relative;
+  transform: translatex(-100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  transition-delay: 0.55s;
+}
+
+.fade-right {
+  position: relative;
+  transform: translatex(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.fade-right-delay {
+  position: relative;
+  transform: translatex(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  transition-delay: 0.55s;
+}
+
+.fade-up.fade-animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.fade-left.fade-animate,
+.fade-left-delay.fade-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right.fade-animate,
+.fade-right-delay.fade-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* .hamburger {
+  left: 0 !important;
+}
+
+.selected {
+  background-color: #00d37f !important;
+} */
+
+.enable {
+  pointer-events: all;
+  cursor: pointer;
+  color: #bfc0c0;
+}
+
+.enable img {
+  filter: none;
+}
+
+.disable div,
+.disable img {
+  color: #3f3e3e;
+  filter: invert(20%) sepia(4%) saturate(19%) hue-rotate(312deg) brightness(99%)
+    contrast(86%);
+}
+
+.disable {
+  pointer-events: none;
+  color: #3f3e3e;
+  cursor: default;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .container {
+    max-width: 620px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .container {
+    max-width: 820px;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+body > iframe {
+  z-index: -1 !important;
+}
+
+.swal-modal {
+  background-color: #1d1d1d;
+}
+
+.swal-title {
+  color: #fff;
+}
+
+.swal-text {
+  color: #979797;
+}
+
+.swal-icon--success:after,
+.swal-icon--success:before {
+  background-color: #1d1d1d;
+}
+
+.swal-icon--success__hide-corners {
+  background-color: #1d1d1d;
+}
+
+.swal-icon--success__ring {
+  border-color: #00d37f;
+}
+
+.swal-icon--success__line {
+  background-color: #00d37f;
+}
+
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.swal-button {
+  background-color: #00d37f;
+  font-size: 18px;
+  padding: 13px 45px;
+  border: 1px solid #00d37f;
+}
+
+.swal-button:focus {
+  box-shadow: unset;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: transparent;
+}
+
+.f_red_color {
+  color: #c5283d;
+}
+.f_green_color {
+  color: #00d37f;
+}

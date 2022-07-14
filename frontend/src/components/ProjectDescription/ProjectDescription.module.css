@@ -1,0 +1,53 @@
+.proj {
+  margin: 50px 0px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.proj_img_data {
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.proj_img_data img {
+  height: 50vh;
+}
+
+.proj_data {
+  font-size: 20px;
+}
+
+.proj_st {
+  margin: 20px;
+}
+
+.proj_gt {
+  margin: 20px;
+}
+
+.proj_ds {
+  margin: 20px;
+}
+
+.buttons {
+}
+
+.buttons button {
+  margin-left: 25px;
+  background: none;
+  color: #00d37f;
+  width: 20%;
+  padding: 1rem;
+  background: linear-gradient(136.24deg, #191f20 -62.6%, #204348 102.48%);
+  border-radius: 6px;
+  color: white;
+  font-size: 1.3rem;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

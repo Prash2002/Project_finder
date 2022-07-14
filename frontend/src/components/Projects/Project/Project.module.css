@@ -1,0 +1,249 @@
+.quantCard {
+  margin: 10px 40px;
+  color: white;
+  background: linear-gradient(122.75deg, #191f20 -43.98%, #204348 100%);
+  width: 30%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 8px 8px;
+  z-index: 990;
+  word-wrap: break-word;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.quantCard .difficulty {
+  width: auto;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  font-size: 14px;
+  padding: 4.5px 11px;
+  font-family: "HKG-semibold";
+}
+
+.quantCard:hover .hidden {
+  display: flex;
+}
+
+.quantCard .hidden > div:last-child {
+  margin-left: auto;
+}
+
+.quantCard h4,
+.quantCard h5 {
+  margin: 8px 0 3px;
+  text-align: left;
+  font-size: 18px;
+  font-family: var(--hkgmed);
+  font-weight: bold;
+}
+
+.quantCard h5 {
+  margin-bottom: 22px;
+  font-weight: 600;
+  font-size: 1rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  transition-delay: 0.4s;
+  font-family: HKG-semibold;
+}
+
+.quantCard p {
+  text-align: left;
+  font-family: HKG-reg;
+  height: 40px;
+  font-size: 0.85rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  line-height: 150%;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.quantCard {
+  overflow: hidden;
+}
+
+.quantCard:hover {
+  max-height: 650px;
+  position: relative;
+}
+
+/* .quantCard .info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 1rem;
+  margin-top: 0;
+  min-height: 350px;
+  background-image: url(../../../assets/quants.svg);
+  background-size: cover;
+} */
+
+/* .quantCard:hover .info {
+  min-height: auto;
+  display: block;
+  margin-top: 2rem;
+  background-image: none;
+} */
+
+/* .quantCard .hoverHidden {
+  padding: 0 1rem;
+  text-align: left;
+  transition: all 0.7s ease-in-out;
+}
+
+.quantCard:hover .hoverHidden {
+  display: none;
+} */
+
+.quantCard button {
+  padding: 0.5em 1.2em;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.quantCard button.investbtn {
+  background: #00d37f;
+  font-family: "Manrope", sans-serif;
+  font-family: 500;
+  padding: 0.5em 0.5em;
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
+.quantCard .info h1 {
+  font-family: var(--hkgmed);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.quantCard .info p {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+/* .quantCard .hidden,
+.quantCard .hidden.flex,
+.quantCard .hidden.flex_equal {
+  display: none;
+  transition: all 0.7s ease-in-out;
+} */
+
+/* .quantCard:hover .hidden {
+  display: block;
+} */
+
+/* .quantCard:hover .hidden.flex {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.quantCard .hidden.flex > div:last-child {
+  margin-left: auto;
+  margin-right: 1rem;
+} */
+
+.quantCard .image_container {
+  background-color: black;
+  margin: 1rem 0;
+  border-radius: 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantCard img {
+  height: 160px;
+  object-fit: cover;
+  max-width: 100%;
+  min-height: 75px;
+  outline: none;
+  margin: 1rem 0;
+}
+
+.quantCard .hidden {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: -60px;
+  padding: 0 1rem;
+  transition-delay: 0.1s;
+}
+
+.quantCard:hover .hidden {
+  bottom: 0px;
+}
+
+.quantCard .hidden img {
+  width: 30px;
+  cursor: pointer;
+  max-height: none;
+  min-height: auto;
+  height: auto;
+  margin: 0;
+}
+
+/* .quantCard .flex img {
+  height: 40px;
+  width: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.quantCard:hover .flex_equal {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.quantCard .flex_equal.hidden > div {
+  text-align: left;
+}
+
+.quantCard .flex_equal.hidden > div h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.quantCard .flex_equal.hidden > div p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8b8b8b;
+} */
+/* 
+.quantCard .hidden.list ul {
+  display: flex;
+  gap: 2rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #fff;
+} */
+
+@media screen and (max-width: 750px) {
+  .quantCard {
+    margin: 10px 0;
+  }
+}
