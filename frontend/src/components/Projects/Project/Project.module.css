@@ -242,6 +242,21 @@
   color: #fff;
 } */
 
+.stack {
+  display: flex;
+  flex-wrap: "wrap";
+  /* justify-content: space-around; */
+}
+.stack > div {
+  margin: 10px 10px 30px;
+  padding: 10px 0px;
+  width: 105px;
+  border-radius: 30px;
+  background-color: #ffffff96;
+  border: none;
+  color: #204348;
+}
+
 @media screen and (max-width: 750px) {
   .quantCard {
     margin: 10px 0;

@@ -4,6 +4,7 @@ import NF from "./pages/404";
 import ProjectsPage from "./pages/ProjectsPage";
 import AddProjectPage from "./pages/AddProject";
 import ProjectDescription from "./components/ProjectDescription/ProjectDescription";
+import UpdateProject from "./components/UpdateProject/UpdateProject";
 
 function App() {
   // const location = useLocation();
@@ -29,6 +30,12 @@ function App() {
             exact
             path="/project/:id"
             render={(props) => <ProjectDescription {...props} />}
+          ></Route>
+
+          <Route
+            exact
+            path="/updateProject/:id"
+            render={(props) => <UpdateProject {...props} />}
           ></Route>
           <Route path="*" render={(props) => <NF {...props} />} />
         </Switch>

@@ -127,6 +127,17 @@
   width: 150px;
 }
 
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 40px 0px;
+}
+
+.link:hover {
+  font-size: 1.25rem;
+  padding: 0px;
+}
+
 @media screen and (max-width: 1024px) {
   .navbar .logo {
     display: block;

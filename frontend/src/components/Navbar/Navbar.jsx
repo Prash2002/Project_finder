@@ -8,14 +8,20 @@ function Navbar() {
   return (
     <nav className={classes.navbar}>
       <div className={classes.home}>
-        <Link to="/">Home</Link>
+        <Link to="/" className={classes.link}>
+          Home
+        </Link>
       </div>
       <div className={classes.home}>
-        <Link to="/projects">Project</Link>
+        <Link to="/projects" className={classes.link}>
+          Project
+        </Link>
       </div>
 
       <div className={classes.home}>
-        <Link to="/add">Add Project</Link>
+        <Link to="/add" className={classes.link}>
+          Add Project
+        </Link>
       </div>
     </nav>
   );

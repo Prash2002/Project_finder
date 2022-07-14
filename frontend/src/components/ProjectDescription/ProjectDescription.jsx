@@ -4,6 +4,7 @@ import { deleteProjectById, getProjectById } from "../../api";
 import Navbar from "../Navbar/Navbar";
 import classes from "./ProjectDescription.module.css";
 import swal from "sweetalert";
+import { Link } from "react-router-dom";
 
 const ProjectDescription = () => {
   const history = useHistory();
@@ -62,7 +63,11 @@ const ProjectDescription = () => {
         <div className={classes.proj_img_data}>
           <img src={proj.image} alt="image" />
           <div className={classes.proj_data}>
-            <div className={classes.proj_st}>{proj.stack[0]}</div>
+            <div className={classes.stack}>
+              {proj.stack.map((x, i) => {
+                return <div key={i}>{x}</div>;
+              })}
+            </div>
             <a className={classes.proj_gt} href={proj.github}>
               {proj.github}
             </a>
@@ -70,7 +75,16 @@ const ProjectDescription = () => {
           </div>
         </div>
         <div className={classes.buttons}>
-          <button>Update</button>
+          <Link
+            to={{
+              pathname: `/updateProject/${id}`,
+              // state: { categoryId, categoryTitle },
+            }}
+            className={classes.link}
+          >
+            {" "}
+            Update{" "}
+          </Link>
           <button onClick={delProj}>Delete</button>
         </div>
       </div>

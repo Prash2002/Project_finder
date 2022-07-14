@@ -1,0 +1,216 @@
+.addproj {
+  margin-top: 20px;
+  color: white;
+  background-color: #191919;
+}
+h2 {
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+.addproj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* .addproj .errors {
+  margin: 0;
+  padding: 0;
+  color: rgb(249, 36, 36);
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  text-align: left;
+} */
+
+.addproj > div {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.addproj > div:first-child {
+  background: linear-gradient(122.62deg, #191f20 0%, #204348 100%);
+}
+
+.addproj > div:last-child {
+  background: #191919;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 5rem 2rem 5rem;
+  height: auto;
+}
+
+.addproj > div:first-child img {
+  min-height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 100vh;
+}
+
+.addproj > div:last-child > div button {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(136.24deg, #191f20 -62.6%, #204348 102.48%);
+  border-radius: 6px;
+  color: white;
+  font-size: 1.3rem;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* .combined_buttons {
+  display: flex;
+} */
+
+.combined_buttons > div + div {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.addproj .combined_buttons button:hover {
+  background: #00d37f;
+  color: #191919;
+}
+
+.form_container > * {
+  padding: 1.1rem 0;
+}
+
+input {
+  color: white;
+}
+
+.form_container p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 180%;
+  color: #bfc0c0;
+}
+
+.form_container span {
+  color: #00d37f;
+}
+
+.bottom_buttons > div > button:first-child {
+  background: none;
+  color: #00d37f;
+  width: 100%;
+}
+
+.fp {
+  display: flex;
+  justify-content: end;
+}
+
+.fp a {
+  background-color: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #ee6461;
+}
+
+.fp a:hover {
+  color: rgb(249, 36, 36);
+}
+
+.bottom_buttons > div > button:nth-child(2) {
+  background: none;
+  color: #00d37f;
+  width: 100%;
+}
+
+.bottom_buttons > div > button:first-child:hover {
+  background: #00d37f;
+  color: #ffffff;
+}
+
+.bottom_buttons > div > button:last-child:hover {
+  background: #00d37f;
+  color: #ffffff;
+}
+
+.bottom_buttons button {
+  border: 1px solid #00d37f;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: red;
+}
+
+.bottom_buttons p {
+  text-align: center;
+  color: #bfc0c0;
+}
+
+.addproj > div:last-child .footer p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-top: 60px;
+}
+
+.form_container .first_tf {
+  width: 100%;
+}
+
+.section_title {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* @media screen and (max-width: 1400px) {
+  .addproj > div:last-child {
+    padding: 5rem 2rem 0.5rem;
+  }
+  .addproj > div:first-child img {
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .addproj {
+    flex-direction: column;
+    height: auto;
+    min-height: none;
+  }
+  .addproj > div {
+    width: 100%;
+  }
+  .addproj > div:first-child {
+    max-height: 90vh;
+  }
+  .addproj > div:last-child {
+    text-align: center;
+    height: auto;
+    padding-top: 2rem;
+    padding: 2rem 1rem 0.5rem;
+    min-height: none;
+  }
+  .addproj > div:last-child .footer {
+    max-height: auto;
+    margin-top: 1rem;
+  }
+  .combined_buttons {
+    justify-content: center;
+  }
+  .addproj .errors {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .addproj .form_container p {
+    font-size: 1rem;
+  }
+} */

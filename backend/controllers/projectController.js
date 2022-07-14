@@ -70,12 +70,15 @@ const updateProject = async (req, res) => {
     project.name = body.name;
     project.stack = body.stack;
     project.description = body.description;
+    project.image = body.image;
+    project.github = body.github;
+
     project
       .save()
       .then(() => {
         return res.status(200).json({
           success: true,
-          id: movie._id,
+          id: project._id,
           message: "Project updated!",
         });
       })

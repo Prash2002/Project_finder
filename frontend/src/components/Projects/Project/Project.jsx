@@ -17,7 +17,11 @@ function Project({ project }) {
       </div>
       <h4>{project.name}</h4>
       <p>{project.description}</p>
-      <h5>{project.stack[0]}</h5>
+      <div className={classes.stack}>
+        {project.stack.map((x, i) => {
+          return <div key={i}>{x}</div>;
+        })}
+      </div>
     </div>
   );
 }

@@ -18,6 +18,7 @@ h3 {
 }
 
 .proj_data {
+  width: 40%;
   font-size: 20px;
 }
 
@@ -42,6 +43,38 @@ h3 {
   color: #00d37f;
   width: 20%;
   padding: 1rem;
+  background: linear-gradient(136.24deg, #191f20 -62.6%, #204348 102.48%);
+  border-radius: 6px;
+  color: white;
+  font-size: 1.3rem;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: "wrap";
+  justify-content: center;
+}
+.stack > div {
+  margin: 10px 10px 30px;
+  padding: 10px 0px;
+  width: 105px;
+  border-radius: 30px;
+  background-color: #ffffff96;
+  border: none;
+  color: #204348;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 25px;
+  background: none;
+  color: #00d37f;
+  width: 100px;
+  padding: 1rem 120px;
   background: linear-gradient(136.24deg, #191f20 -62.6%, #204348 102.48%);
   border-radius: 6px;
   color: white;
