@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 function Project({ project }) {
   return (
     <div className={classes.quantCard}>
+      <h4>{project.name}</h4>
       <div className={classes.image_container}>
         <Link
           to={{
@@ -15,7 +16,6 @@ function Project({ project }) {
           <img src={project.image} alt="" />
         </Link>
       </div>
-      <h4>{project.name}</h4>
       <p>{project.description}</p>
       <div className={classes.stack}>
         {project.stack.map((x, i) => {

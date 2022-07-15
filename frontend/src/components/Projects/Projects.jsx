@@ -20,7 +20,7 @@ const Projects = () => {
 
   return (
     <div>
-      <h2> Projects </h2>
+      <h2 style={{ textAlign: "start", padding: "20px 50px" }}> Projects </h2>
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {projects.map((x, i) => {
           return <Project project={x} key={i} />;

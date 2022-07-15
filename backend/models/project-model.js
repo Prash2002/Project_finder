@@ -15,6 +15,6 @@ const ProjectS = new Schema(
   { timestamps: true }
 );
 
-const Project = mongoose.model("project", ProjectS);
+const Project = mongoose.model("projects", ProjectS, "projects");
 
 export default Project;

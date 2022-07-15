@@ -38,6 +38,11 @@
   font-family: var(--hkgmed);
   font-weight: bold;
 }
+.quantCard h4 {
+  padding-top: 20px;
+  font-size: 21px;
+  /* text-align: center; */
+}
 
 .quantCard h5 {
   margin-bottom: 22px;
