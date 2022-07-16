@@ -1,10 +1,16 @@
 .navbar {
   background-color: #242424;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 1rem 2rem;
   gap: 1.5rem;
   align-items: center;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
 
 .navbar .notification {
@@ -134,7 +140,7 @@
 }
 
 .link:hover {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   padding: 0px;
 }
 
