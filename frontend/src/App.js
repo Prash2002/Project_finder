@@ -16,7 +16,7 @@ function App() {
         <Switch
         // location={location} key={location.pathname}
         >
-          <Route exact path="/" render={(props) => <HomePage />} />
+          <Route exact path="/" render={(props) => <ProjectsPage />} />
           <Route
             exact
             path="/projects"
