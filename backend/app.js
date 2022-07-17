@@ -22,8 +22,8 @@ app.use(function (req, res, next) {
 
 app.use("/api", project);
 
-app.get("/", (req, res) => {
-  res.send("HELLO!");
-});
+// app.get("/", (req, res) => {
+//   res.send("HELLO!");
+// });
 
 export default app;

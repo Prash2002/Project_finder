@@ -2,7 +2,7 @@ import React from "react";
 
 const StackFind = () => {
   return (
-    <div className={classes.s_card}>
+    <div>
       <div>Python</div>
     </div>
   );
