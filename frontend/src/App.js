@@ -5,6 +5,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import AddProjectPage from "./pages/AddProject";
 import ProjectDescription from "./components/ProjectDescription/ProjectDescription";
 import UpdateProject from "./components/UpdateProject/UpdateProject";
+import HomePage from "./pages/HomePage";
 
 function App() {
   // const location = useLocation();
@@ -15,7 +16,7 @@ function App() {
         <Switch
         // location={location} key={location.pathname}
         >
-          <Route exact path="/" render={(props) => <ProjectsPage />} />
+          <Route exact path="/" render={(props) => <HomePage />} />
           <Route
             exact
             path="/projects"

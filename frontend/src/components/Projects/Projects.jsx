@@ -16,6 +16,10 @@ const Projects = () => {
         setprojects(res.data.data);
       }
     });
+    apis.getProjectByStack("web").then((res) => {
+      console.log("RESULT!! ");
+      console.log(res);
+    });
   }, []);
 
   return (

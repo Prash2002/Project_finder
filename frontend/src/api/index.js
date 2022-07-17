@@ -12,6 +12,7 @@ export const updateProjectById = (id, payload) =>
   api.put(`/project/${id}`, payload);
 export const deleteProjectById = (id) => api.delete(`/project/${id}`);
 export const getProjectById = (id) => api.get(`/project/${id}`);
+export const getProjectByStack = (stack) => api.get(`/projects/${stack}`);
 
 const apis = {
   addProject,
@@ -19,6 +20,7 @@ const apis = {
   updateProjectById,
   deleteProjectById,
   getProjectById,
+  getProjectByStack,
 };
 
 export default apis;

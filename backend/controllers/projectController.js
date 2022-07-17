@@ -122,10 +122,27 @@ const getProjectById = async (req, res) => {
   }).catch((err) => console.log(err));
 };
 
+const getProjectByStack = async (req, res) => {
+  await Project.findOne({ stack: req.params.stack }, (err, project) => {
+    console.log("here");
+    if (err) {
+      return res.status(400).json({ success: false, error: err });
+    }
+
+    if (!project) {
+      return res
+        .status(404)
+        .json({ success: false, error: `project not found` });
+    }
+    return res.status(200).json({ success: true, data: project });
+  }).catch((err) => console.log(err));
+};
+
 export {
   addProject,
   getAllProjects,
   updateProject,
   deleteProject,
   getProjectById,
+  getProjectByStack,
 };
